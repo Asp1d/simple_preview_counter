@@ -14,7 +14,7 @@ gem "simple_preview_counter",  github: "Asp1d/simple_preview_counter"
 
 And then execute:
 
-    $ bundle
+    $ bundle exec rails g simple_preview_counter:install YourModelName
 
 
 ## Usage

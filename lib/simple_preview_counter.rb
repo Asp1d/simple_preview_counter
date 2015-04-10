@@ -5,15 +5,12 @@ module SimplePreviewCounter
   extend ActiveSupport::Concern
 
   included do
-    def inc_view_count(n = 1)
-      preview_count += n
+    def count_preview(n = 1)
+      self.preview_count += n
     end
 
-    def inc_view_count!(n)
+    def count_preview!(n = 1)
       update_column(:preview_count, preview_count + n)
     end
-  end
-
-  class_methods do
   end
 end
