@@ -9,16 +9,13 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'simple_preview_counter'
+gem "simple_preview_counter",  github: "Asp1d/simple_preview_counter"
 ```
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install simple_preview_counter
 
 ## Usage
 

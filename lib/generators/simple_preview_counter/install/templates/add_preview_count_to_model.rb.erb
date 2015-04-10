@@ -1,0 +1,5 @@
+class AddPreviewCountTo<%= model_name.capitalize.pluralize %> < ActiveRecord::Migration
+  def change
+    add_column :<%= model_name.underscore.pluralize %>, :preview_count, :integer, default: 0
+  end
+end
