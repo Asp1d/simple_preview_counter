@@ -19,7 +19,55 @@ And then execute:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add 
+  
+    include SimplePreviewCounter
+
+to your model, example:
+
+```ruby
+class YourModelName < ActiveRecord::Base
+  ...
+  include SimplePreviewCounter
+  ...
+
+end
+```
+
+Then in your controller do
+
+```ruby
+def show
+   @model.count_preview
+   @model.save
+end
+```
+
+or
+
+```ruby
+def show
+   @model.count_preview!
+end
+```
+
+Also you can fake data by passing integer directly to method
+
+```ruby
+def show
+   @model.count_preview!(9000)
+end
+```
+
+
+
+You can get actual preview count by calling `preview_count`
+
+```
+<%= @model.preview_count %>
+```
+
+
 
 ## Development
 
